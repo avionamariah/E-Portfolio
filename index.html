@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Portfolio</title>
+  <title>E-Portfolio | Manansala</title>
 
   <!--
     - favicon
@@ -183,10 +183,6 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
         </ul>
 
       </nav>
@@ -210,7 +206,10 @@
 
           <p>
             I'm currently enrolled in COMP 016 - Web Development, and this e-portfolio serves as a showcase of my learning journey, skills, and projects throughout the course.
-            I’m excited to continue growing as a developer and exploring the endless possibilities in the world of web development.
+          </p>
+            
+          <p>
+            Reflecting on the course as a whole, I've significantly improved my Laravel skills, learning how to structure a project efficiently, manage databases with migrations, and implement security best practices. The step-by-step activities, from installation to building a complete platform, helped solidify my understanding of development. This experience has not only enhanced my technical abilities but also taught me problem-solving strategies, such as debugging errors and optimizing performance. Moving forward, I feel more confident in developing scalable web applications.
           </p>
         </section>
 
@@ -285,7 +284,6 @@
 
         </div>
 
-
       </article>
 
 
@@ -296,7 +294,7 @@
       <article class="midterm" data-page="midterm">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">E-Portfolio</h2>
         </header>
 
         <section class="projects">
@@ -329,7 +327,7 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-select-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -362,6 +360,10 @@
             </ul>
 
           </div>
+
+          <div class="image-instruction" style="text-align: center; margin: 10px 0 20px; font-size: 0.9em; color: #777;">
+      <p>Click on any project image to view the full file</p>
+    </div>
 
           <ul class="project-list">
 
@@ -647,39 +649,189 @@
       <article class="final" data-page="final">
 
         <header>
-          <h2 class="h2 article-title">Final</h2>
+          <h2 class="h2 article-title">E-Portfolio</h2>
         </header>
+        
 
-        <section class="blog-posts">
+        <section class="projects">
 
-          <ul class="blog-posts-list">
+          <ul class="filter-list">
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Final Project" loading="lazy">
-                </figure>
+            <li class="filter-item">
+              <button data-filter-btn>Group Project</button>
+            </li>
 
-                <div class="blog-content">
+            <li class="filter-item">
+              <button data-filter-btn>Activities</button>
+            </li>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Web Development</p>
+          </ul>
 
-                    <span class="dot"></span>
+          <div class="image-instruction" style="text-align: center; margin: 10px 0 20px; font-size: 0.9em; color: #777;">
+      <p>Click on any project image to view the full file</p>
+    </div>
 
-                    <time datetime="2025">2025</time>
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Group Project</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Activities</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="group project">
+              <a href="https://github.com/jeayuun/E-Learning-Platform">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Final Project</h3>
+                  <img src="./assets/images/finalproj.png" alt="project" loading="lazy">
+                </figure>
 
-                  <!--
-                  <p class="blog-text">
-                    
-                  </p> -->
+                <h3 class="project-title">E-Learning Platform</h3>
 
-                </div>
+                <p class="project-category">Group Project</p>
+                
+                <p class="project-text">
+                <br> In this project, we developed a functional laravel-based e-learning system with three user roles: admin, teacher, and student. As the UI/UX designer and content creator, my primary responsibilities included: designing intuitive user interfaces for each role, creating engaging course content templates, and developing comprehensive documentation for the system. The main challenge I encountered was integrating my frontend designs with the backend functionality developed by teammates. This required close collaboration to ensure visual elements properly connected with the underlying Laravel framework.
+              </p>
 
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="group project">
+              <a href="https://drive.google.com/drive/u/2/folders/1QjldVC5oq6IANebQklHZf8klN8NId6qZ">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/finalppt.png" alt="presentation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-Learning Platform Presentation</h3>
+
+                <p class="project-category">Group Project</p>
+
+                <p class="project-text">
+                  <br> Preparing the presentation involved summarizing the platform's features and development process concisely. The presentation condenses the documentation's information into a visually engaging format, highlighting key features through slides that showcase the platform's interface, user roles, and CRUD operations. The challenge was explaining technical concepts clearly. I focused on visual aids, such as templates and all slides, to make the presentation engaging. This activity improved my skills and ability to articulate technical details effectively.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="group project">
+              <a href="https://drive.google.com/drive/u/2/folders/1QjldVC5oq6IANebQklHZf8klN8NId6qZ">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/finaldocu.png" alt="documentation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E-Learning Platform Documentation</h3>
+
+                <p class="project-category">Group Project</p>
+
+                <p class="project-text">
+                  <br> The documentation for the E-Learning Platform provides a comprehensive breakdown of the project, covering its purpose, technical implementation, and evaluation. It includes sections on the project background, objectives, methodology, evaluation plan, screenshots, and source code. The documentation explains why Laravel was chosen, details the database schema and RBAC implementation, and describes the testing process to ensure functionality and security.
+                </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="activities">
+              <a href="https://drive.google.com/file/d/1MZYPRPHu4YLprVXt_tLqndYpZcqSOXdL/view?usp=sharing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/finalact1.png" alt="Activity #1 Laravel Installation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Activity #1 Laravel Installation</h3>
+
+                <p class="project-category">Activities</p>
+
+                <p class="project-text">
+                  <br>  The first activity involved setting up the Laravel framework, which required installing Composer, PHP, and necessary dependencies. Following the provided step-by-step instructions, I successfully installed Laravel and configured the development environment. The clear guidelines made this process straightforward, allowing me to establish a proper foundation for the project.
+                  </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="activities">
+              <a href="https://drive.google.com/file/d/1WaB0zOCh4GPGDXfn88XVna_pkktG0Uu-/view?usp=sharing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/finalact2.png" alt="Activity #2 Laravel Authentication" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Activity #2 Laravel Authentication</h3>
+
+                <p class="project-category">Activities</p>
+
+                <p class="project-text">
+                  <br>  Using Laravel's built-in authentication scaffolding, I implemented the login and registration system. The activity's detailed instructions helped me quickly set up the authentication features without complications. I explored the generated code structure to understand how Laravel handles user authentication behind the scenes.
+                  </p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="activities">
+              <a href="https://drive.google.com/file/d/1c-dM0zIYqnbgDb9zDhCTkGXvFBXpySuh/view?usp=sharing">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/finalact3.png" alt="Activity #3 Basic CRUD on Laravel" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Activity #3 Basic CRUD on Laravel</h3>
+
+                <p class="project-category">Activities</p>
+
+                <p class="project-text">
+                  <br>  For this activity, I created a simple Create, Read, Update, and Delete (CRUD) interface following the given tutorial. The step-by-step guide made it easy to implement the create, read, update, and delete functionalities for a sample resource. Through this exercise, I gained practical experience in working with Laravel's Eloquent ORM and basic routing.
+                  </p>
               </a>
             </li>
 
@@ -688,9 +840,6 @@
         </section>
 
       </article>
-
-
-
 
       <!--
         - #CONTACT
@@ -731,173 +880,55 @@
 
           </form>
 
-        </section>
+          <ul class="contacts-list">
 
-      </article>
+          <li class="contact-item">
 
-      
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Polytechnic University of the Philippines</h4>
-
-              <span>2022 - Present</span>
-
-              <p class="timeline-text">
-                Bachelor of Science in Computer Science (3rd Year, Ongoing)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cavite National High School</h4>
-
-              <span>2020 - 2022</span>
-
-              <p class="timeline-text">
-                Senior High School - Science, Technology, Engineering, and Mathematics
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cavite National High School</h4>
-
-              <span>2016 - 2020</span>
-
-              <p class="timeline-text">
-                Junior High School - Science, Technology, and Engineering
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Pacifico O. Aquino Elementary School</h4>
-
-              <span>2010 - 2016</span>
-
-              <p class="timeline-text">
-                Elementary Education
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <!--
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <a href="manansalaavionamariah@gmail.com" class="contact-link">manansalaavionamariah@gmail.com</a>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+          </li>
 
-          <ol class="timeline-list">
+        </ul>
 
-            <li class="timeline-item">
+        <div class="separator"></div>
 
-              <h4 class="h4 timeline-item-title">Position</h4>
+        <ul class="social-list">
 
-              <span>20** — </span>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-              <p class="timeline-text">
-                
-              </p>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-            </li> -->
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-          </ol>
+        </ul>
 
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Frontend Development</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Backend Development</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
+      </div>
 
         </section>
 
       </article>
-
-    </div>
 
   </main>
-
-
-
 
 
 
